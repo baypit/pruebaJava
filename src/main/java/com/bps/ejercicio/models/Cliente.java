@@ -41,7 +41,15 @@ public class Cliente {
      @Column(name="CARGO")
      private String cargo;
      
-     @Column(name="CREACION")
+     public String getCargo() {
+		return cargo;
+	}
+
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
+	}
+
+	@Column(name="CREACION")
      private String fechaCreacion	;
 
 	public Integer getId() {
